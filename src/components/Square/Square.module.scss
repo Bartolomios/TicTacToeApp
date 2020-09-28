@@ -1,0 +1,57 @@
+.square{
+    border:none;
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    transition: 0.3s;
+    &:hover{
+        background:white;
+    }
+    &:focus{
+        outline:0;
+    }
+}
+
+
+.cross, .circle{
+	position: relative;
+	pointer-events: none;
+
+}
+.cross::before, .cross::after{
+	content:'';
+	display: block;
+	height: 80px;
+	position: absolute;
+	width: 12px;
+	background:#0080FF;
+}
+.cross::before{
+	transform:rotate(45deg);
+}
+.cross::after{
+	transform:rotate(-45deg);
+}
+.circle::before, .circle::after{
+	content:'';
+	display: block;
+	height: 80px;
+	position: absolute;
+	width: 80px;
+	border-radius: 50%;
+	background:#0080FF;
+}
+.circle::before{
+	
+	height: 60px;
+	width: 60px;
+	background:#f1f1f1;
+	z-index: 2;
+
+}
+.circle::after{
+	transform:rotate(-45deg);
+}

@@ -1,0 +1,17 @@
+.restartButton{
+    margin:20px 0px;
+    background:#0080FF;
+    color:white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    border:none;
+    border:1px soliid #0080FF;
+    padding:10px 20px;
+    outline: none;
+    transition: 0.3s;
+    &:hover{
+        transform:scale(1.2)
+    }
+
+}
